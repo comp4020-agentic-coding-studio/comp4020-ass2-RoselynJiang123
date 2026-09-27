@@ -1,0 +1,275 @@
+$ pnpm build && vitest run spec
+$ astro build
+04:31:24 [content] Syncing content
+04:31:24 [content] Synced content
+04:31:24 [types] Generated 395ms
+04:31:24 [build] output: "static"
+04:31:24 [build] mode: "static"
+04:31:24 [build] directory: /home/roselyn/comp4020/comp4020-ass2-RoselynJiang123/dist/
+04:31:24 [build] Collecting build info...
+04:31:24 [build] ✓ Completed in 450ms.
+04:31:24 [build] Building static entrypoints...
+Could not fetch from `https://fonts.google.com/metadata/fonts`. Will retry in `1000ms`. `3` retries left.
+Could not fetch from `https://fonts.google.com/metadata/fonts`. Will retry in `1000ms`. `2` retries left.
+Could not fetch from `https://fonts.google.com/metadata/fonts`. Will retry in `1000ms`. `1` retries left.
+Could not initialize provider `google-c200761b0711fe56`. `unifont` will not be able to process fonts provided by this provider. [TypeError: fetch failed] {
+  [cause]: AggregateError [ETIMEDOUT]: 
+      at internalConnectMultiple (node:net:1339:18)
+      at internalConnectMultiple (node:net:1415:5)
+      at Timeout.internalConnectMultipleTimeout (node:net:1969:5)
+      at listOnTimeout (node:internal/timers:637:11)
+      at process.processTimers (node:internal/timers:571:7) {
+    code: 'ETIMEDOUT',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+04:31:30 [WARN] [assets] No data found for font family Public Sans. Review your configuration
+04:31:30 [WARN] [assets] No data found for font family Roboto Mono. Review your configuration
+04:31:30 [astro-icon] Loaded icons from /home/roselyn/comp4020/comp4020-ass2-RoselynJiang123/node_modules/.pnpm/astro-theme-university@https+++codeload.github.com+ANUcybernetics+astro-theme-universit_2d210993d5de7996d315958e5d56e2d2/node_modules/astro-theme-university/icons, iconoir
+04:31:30 [assets] Copying fonts (0 files)...
+04:31:30 [vite] ✓ built in 6.28s
+Could not fetch from `https://fonts.google.com/metadata/fonts`. Will retry in `1000ms`. `3` retries left.
+Could not fetch from `https://fonts.google.com/metadata/fonts`. Will retry in `1000ms`. `2` retries left.
+Could not fetch from `https://fonts.google.com/metadata/fonts`. Will retry in `1000ms`. `1` retries left.
+Could not initialize provider `google-c200761b0711fe56`. `unifont` will not be able to process fonts provided by this provider. [TypeError: fetch failed] {
+  [cause]: AggregateError [ETIMEDOUT]: 
+      at internalConnectMultiple (node:net:1339:18)
+      at internalConnectMultiple (node:net:1415:5)
+      at Timeout.internalConnectMultipleTimeout (node:net:1969:5)
+      at listOnTimeout (node:internal/timers:637:11)
+      at process.processTimers (node:internal/timers:571:7) {
+    code: 'ETIMEDOUT',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+04:31:36 [WARN] [assets] No data found for font family Public Sans. Review your configuration
+04:31:36 [WARN] [assets] No data found for font family Roboto Mono. Review your configuration
+04:31:36 [vite] ✓ built in 5.59s
+04:31:36 [build] Rearranging server assets...
+
+ generating static routes 
+04:31:36   ├─ /404.html (+13ms) 
+04:31:36   ├─ /assessments/assignment-1/index.html (+4ms) 
+04:31:36   ├─ /assessments/final-project/index.html (+2ms) 
+04:31:36   ├─ /assessments/index.html (+5ms) 
+04:31:36   ├─ /decks/week-01/index.html (+2ms) 
+04:31:36   ├─ /lectures/week-01/index.html (+3ms) 
+04:31:36   ├─ /lectures/week-02/index.html (+2ms) 
+04:31:36   ├─ /lectures/index.html (+3ms) 
+04:31:36   ├─ /people/felix-ansell-obi/index.html (+2ms) 
+04:31:36   ├─ /people/maren-tolliver/index.html (+2ms) 
+04:31:36   ├─ /people/index.html (+3ms) 
+04:31:36   ├─ /policies/index.html (+2ms) 
+04:31:36   ├─ /sessions/01-getting-started/index.html (+2ms) 
+04:31:36   ├─ /sessions/02-first-review/index.html (+2ms) 
+04:31:36   ├─ /sessions/index.html (+2ms) 
+04:31:36   ├─ /index.html (+2ms) 
+04:31:36 ✓ Completed in 83ms.
+
+ generating optimized images 
+04:31:36   ▶ /_astro/hero-home.kViffbwV_Zfnzo3.avif (reused cache entry) (+1ms) (1/4)
+04:31:36   ▶ /_astro/card.BIvH_RGg_Z1nqa19.jpeg (reused cache entry) (+0ms) (2/4)
+04:31:36   ▶ /_astro/hero-home.kViffbwV_ZL75O5.avif (reused cache entry) (+1ms) (3/4)
+04:31:36   ▶ /_astro/hero-home.kViffbwV_14ofgC.avif (reused cache entry) (+0ms) (4/4)
+04:31:36 ✓ Completed in 2ms.
+
+04:31:36 [build] ✓ Completed in 11.99s.
+04:31:36 [astro-theme-university] Search index built.
+04:31:36 [astro-theme-university] Checked 16 pages (16 unchanged, reused from cache) — no accessibility violations.
+04:31:36 [astro-theme-university] Checked 16 pages — all internal links respect base.
+04:31:36 [astro-theme-university] Generated llms.txt and llms-full.txt (13 entries).
+04:31:36 [course-graph] Generated course API: 9 nodes, 5 edges, 10 files.
+04:31:36 [astromotion] Checked 1 deck(s) — no structural violations.
+04:31:36 [astro-broken-links-checker] Checking 16 html pages for broken links
+04:31:36 [astro-broken-links-checker] No broken links detected.
+04:31:36 [astro-broken-links-checker] Time to check links: 16 ms
+04:31:36 [build] 16 page(s) built in 12.77s
+04:31:36 [build] Complete!
+
+ RUN  v4.1.10 /home/roselyn/comp4020/comp4020-ass2-RoselynJiang123
+
+ ❯ spec/course-promises.test.ts (14 tests | 10 failed) 15ms
+     × has exactly one Round for each of weeks 1 to 12, in date order 6ms
+     × puts each Round in its phase: Pre-op 1–4, Theatre 5–9, Debrief 10–12 1ms
+     × adds a different protocol section every week (no two weeks repeat) 0ms
+     × is defined exactly once, in the Week 4 lecture 1ms
+     × is never used before it is defined 0ms
+     × is carried by the Week 4 lecture's deck, which was built 0ms
+     × is due only after every week it draws on has been taught 0ms
+     × teaches the consent form before the protocol that must contain one is due 0ms
+     × gives reviewers at least 7 days with the protocols they review 0ms
+     × actually teaches every landmark trial the home page promises 0ms
+
+⎯⎯⎯⎯⎯⎯ Failed Tests 10 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  spec/course-promises.test.ts > twelve Rounds that progress > has exactly one Round for each of weeks 1 to 12, in date order
+AssertionError: expected [ 1, 2 ] to deeply equal [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, …(2) ]
+
+- Expected
++ Received
+
+  [
+    1,
+    2,
+-   3,
+-   4,
+-   5,
+-   6,
+-   7,
+-   8,
+-   9,
+-   10,
+-   11,
+-   12,
+  ]
+
+ ❯ spec/course-promises.test.ts:55:19
+     53|   it("has exactly one Round for each of weeks 1 to 12, in date order",…
+     54|     const weeks = sessions.map((s) => Number(m(s).week)).sort((a, b) =…
+     55|     expect(weeks).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]);
+       |                   ^
+     56|     for (let w = 2; w <= 12; w++) {
+     57|       expect(whenOf(sessionByWeek.get(w)!) > whenOf(sessionByWeek.get(…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/10]⎯
+
+ FAIL  spec/course-promises.test.ts > twelve Rounds that progress > puts each Round in its phase: Pre-op 1–4, Theatre 5–9, Debrief 10–12
+AssertionError: sessions/01-getting-started: expected undefined to be 'Pre-op' // Object.is equality
+
+- Expected:
+"Pre-op"
+
++ Received:
+undefined
+
+ ❯ spec/course-promises.test.ts:65:37
+     63|     for (const s of sessions) {
+     64|       const w = Number(m(s).week);
+     65|       expect(m(s).phase, `${s.id}`).toBe(PHASE_OF(w));
+       |                                     ^
+     66|     }
+     67|   });
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/10]⎯
+
+ FAIL  spec/course-promises.test.ts > twelve Rounds that progress > adds a different protocol section every week (no two weeks repeat)
+AssertionError: sessions/01-getting-started has no protocolSection: expected 0 to be greater than 0
+ ❯ spec/course-promises.test.ts:72:70
+     70|     const sections = sessions.map((s) => String(m(s).protocolSection ?…
+     71|     for (const [i, sec] of sections.entries()) {
+     72|       expect(sec.length, `${sessions[i].id} has no protocolSection`).t…
+       |                                                                      ^
+     73|     }
+     74|     expect(new Set(sections).size).toBe(12);
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/10]⎯
+
+ FAIL  spec/course-promises.test.ts > the Fidelity Ladder > is defined exactly once, in the Week 4 lecture
+AssertionError: expected +0 to be 1 // Object.is equality
+
+- Expected
++ Received
+
+- 1
++ 0
+
+ ❯ spec/course-promises.test.ts:93:29
+     91|
+     92|   it("is defined exactly once, in the Week 4 lecture", () => {
+     93|     expect(definers.length).toBe(1);
+       |                             ^
+     94|     expect(definers[0].type).toBe("lectures");
+     95|     expect(Number(m(definers[0]).week)).toBe(4);
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/10]⎯
+
+ FAIL  spec/course-promises.test.ts > the Fidelity Ladder > is never used before it is defined
+TypeError: Cannot read properties of undefined (reading 'type')
+ ❯ whenOf spec/course-promises.test.ts:29:46
+     27| const of = (type: string) => api.nodes.filter((n) => n.type === type);
+     28| const m = (n: ApiNode) => n.meta ?? {};
+     29| const whenOf = (n: ApiNode): string => day(n.type === "assessments" ? …
+       |                                              ^
+     30| const weightOf = (n: ApiNode): number =>
+     31|   Number(m(n).weight ?? m(n).weighting ?? m(n).percent ?? m(n).percent…
+ ❯ spec/course-promises.test.ts:99:21
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[5/10]⎯
+
+ FAIL  spec/course-promises.test.ts > the Fidelity Ladder > is carried by the Week 4 lecture's deck, which was built
+TypeError: Cannot read properties of undefined (reading 'meta')
+ ❯ m spec/course-promises.test.ts:28:29
+     26| };
+     27| const of = (type: string) => api.nodes.filter((n) => n.type === type);
+     28| const m = (n: ApiNode) => n.meta ?? {};
+       |                             ^
+     29| const whenOf = (n: ApiNode): string => day(n.type === "assessments" ? …
+     30| const weightOf = (n: ApiNode): number =>
+ ❯ spec/course-promises.test.ts:108:25
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[6/10]⎯
+
+ FAIL  spec/course-promises.test.ts > assessment grows out of the weeks > is due only after every week it draws on has been taught
+AssertionError: assessments/assignment-1 names no weeks: expected 0 to be greater than 0
+ ❯ spec/course-promises.test.ts:125:54
+    123|     for (const a of assessments) {
+    124|       const weeks = (m(a).requiresWeeks ?? []) as number[];
+    125|       expect(weeks.length, `${a.id} names no weeks`).toBeGreaterThan(0…
+       |                                                      ^
+    126|       for (const w of weeks) {
+    127|         const s = sessionByWeek.get(Number(w));
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[7/10]⎯
+
+ FAIL  spec/course-promises.test.ts > assessment grows out of the weeks > teaches the consent form before the protocol that must contain one is due
+TypeError: Cannot read properties of undefined (reading 'meta')
+ ❯ m spec/course-promises.test.ts:28:29
+     26| };
+     27| const of = (type: string) => api.nodes.filter((n) => n.type === type);
+     28| const m = (n: ApiNode) => n.meta ?? {};
+       |                             ^
+     29| const whenOf = (n: ApiNode): string => day(n.type === "assessments" ? …
+     30| const weightOf = (n: ApiNode): number =>
+ ❯ spec/course-promises.test.ts:136:19
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[8/10]⎯
+
+ FAIL  spec/course-promises.test.ts > assessment grows out of the weeks > gives reviewers at least 7 days with the protocols they review
+TypeError: Cannot read properties of undefined (reading 'meta')
+ ❯ m spec/course-promises.test.ts:28:29
+     26| };
+     27| const of = (type: string) => api.nodes.filter((n) => n.type === type);
+     28| const m = (n: ApiNode) => n.meta ?? {};
+       |                             ^
+     29| const whenOf = (n: ApiNode): string => day(n.type === "assessments" ? …
+     30| const weightOf = (n: ApiNode): number =>
+ ❯ spec/course-promises.test.ts:143:12
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[9/10]⎯
+
+ FAIL  spec/course-promises.test.ts > no invented evidence > actually teaches every landmark trial the home page promises
+AssertionError: landmark moseley-2002 is never taught: expected false to be true // Object.is equality
+
+- Expected
++ Received
+
+- true
++ false
+
+ ❯ spec/course-promises.test.ts:158:87
+    156|   it("actually teaches every landmark trial the home page promises", (…
+    157|     const taught = new Set(cited.map((c) => c.t));
+    158|     for (const t of LANDMARKS) expect(taught.has(t), `landmark ${t} is…
+       |                                                                                       ^
+    159|   });
+    160| });
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[10/10]⎯
+
+
+ Test Files  1 failed | 1 passed (2)
+      Tests  10 failed | 5 passed (15)
+   Start at  04:31:36
+   Duration  159ms (transform 44ms, setup 0ms, import 63ms, tests 18ms, environment 0ms)
+
+[ELIFECYCLE] Test failed. See above for more details.
