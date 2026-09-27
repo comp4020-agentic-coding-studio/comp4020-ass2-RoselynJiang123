@@ -1,0 +1,157 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SLOP8982 mockup (reference only)</title><style>
+:root{--sham-drape:#2f6b5c;--sham-drape-tint:color-mix(in srgb,var(--sham-drape) 10%,transparent);--sham-incision:#b3261e;--ink:#17241f;--muted:#4a5a55;--bg:#fff}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;color:var(--ink);background:#e9ecea;line-height:1.55}
+.note{background:#fff8d6;border:1px dashed #b89b00;padding:10px 16px;margin:16px;font-size:14px}
+.frame{background:var(--bg);max-width:1100px;margin:16px auto 40px;box-shadow:0 1px 8px rgba(0,0,0,.12)}
+.slop{background:#222;color:#fff;padding:14px 24px;font-size:14px;display:flex;justify-content:space-between}
+.slop small{opacity:.7}
+main{padding:40px 48px 56px;max-width:880px;margin:0 auto}
+.kicker{color:var(--sham-drape);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:14px}
+h1{font-size:clamp(30px,5vw,48px);line-height:1.08;margin:8px 0 0;letter-spacing:-.015em}
+h1+.rule,.rule{height:2px;background:var(--sham-incision);width:120px;margin:18px 0 20px;border:0}
+.lede{font-size:20px;max-width:640px}
+blockquote{margin:32px 0;padding:18px 22px;border-left:4px solid var(--sham-drape);background:var(--sham-drape-tint);font-size:19px}
+figure{margin:32px 0}figure svg{width:100%;height:auto;max-width:720px;display:block}
+figcaption{font-size:15px;color:var(--muted);margin-top:8px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+h2{font-size:22px;margin:36px 0 8px}
+.trials li{margin:4px 0}
+.phase{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--sham-drape);border-bottom:1px solid var(--sham-drape);padding-bottom:4px;margin:26px 0 6px}
+ol.sched{list-style:none;padding:0;margin:0}
+ol.sched li{display:grid;grid-template-columns:64px 1fr auto;gap:12px;padding:9px 0;border-bottom:1px solid #e3e7e5;align-items:baseline}
+ol.sched li.brk{display:block;color:var(--muted);font-style:italic;font-size:14px}
+.wk{font-variant-numeric:tabular-nums;color:var(--muted);font-size:14px}
+.sec{font-size:13px;color:var(--muted)}
+a{color:var(--sham-drape)}
+.foot{font-size:13px;color:var(--muted);margin-top:36px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 4px}
+.chip{font-size:13px;border:1px solid #cfd8d4;border-radius:999px;padding:3px 10px}
+.chip.ladder{border-color:var(--sham-drape);background:var(--sham-drape-tint);color:var(--sham-drape);font-weight:600}
+.log{border:1px solid var(--sham-drape);border-left:6px solid var(--sham-drape);padding:14px 18px;margin-top:28px}
+.log b{color:var(--sham-drape)}
+.label{text-align:center;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#666;margin-top:28px}
+.mobile{width:390px;margin:16px auto 60px;background:#fff;box-shadow:0 1px 8px rgba(0,0,0,.12)}
+.mobile main{padding:24px 16px}.mobile .two{grid-template-columns:1fr}.mobile ol.sched li{grid-template-columns:52px 1fr}.mobile .sec{grid-column:2}
+@media (max-width:700px){main{padding:24px 16px}.two{grid-template-columns:1fr}ol.sched li{grid-template-columns:52px 1fr}.sec{grid-column:2}}
+</style></head><body>
+<div class="note"><b>Reference mockup, not code.</b> Shows layout, hierarchy and where the course accents go. The dark bar stands in for the unchanged Slop header/footer. Real colours for everything except the three <code>--sham-*</code> accents come from the Slop brand tokens.</div>
+
+<div class="label">1 · Home page — desktop</div>
+<div class="frame"><div class="slop"><span>Slop University</span><small>Slop header · nav · unchanged</small></div><main>
+<div class="kicker">SLOP8982 · Postgraduate · Semester 2, 2026</div>
+<h1>Designing the Sham: Placebo Controls for Invasive Procedures</h1><hr class="rule">
+<p class="lede">Every other treatment has to beat a placebo. Surgery mostly doesn't. This course spends twelve weeks on the operation that makes the comparison possible: the one where nothing is done, carefully.</p>
+<blockquote>A sham procedure is not the absence of an operation. It is an operation — designed, rehearsed, consented and reviewed — whose only job is to leave the real one nothing to hide behind.</blockquote>
+<figure><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif">
+  <title id="t">The Sham Fidelity Ladder</title>
+  <desc id="d">Six rungs from L0 Told at the bottom to L5 Indistinguishable at the top. Blinding and risk both increase as the ladder climbs.</desc>
+  <rect width="720" height="480" rx="12" fill="#f6f8f7"/>
+  <!-- axes: blinding and risk both rise -->
+  <defs>
+    <marker id="ag" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#2f6b5c"/></marker>
+    <marker id="ar" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#b3261e"/></marker>
+  </defs>
+  <line x1="52" y1="420" x2="52" y2="48" stroke="#2f6b5c" stroke-width="2" marker-end="url(#ag)"/>
+  <text x="40" y="240" fill="#2f6b5c" font-size="14" font-weight="600" text-anchor="middle" transform="rotate(-90 40 240)">blinding</text>
+  <line x1="100" y1="420" x2="100" y2="48" stroke="#b3261e" stroke-width="2" marker-end="url(#ar)"/>
+  <text x="88" y="240" fill="#b3261e" font-size="14" font-weight="600" text-anchor="middle" transform="rotate(-90 88 240)">risk</text>
+  <!-- rails -->
+  <rect x="140" y="28" width="8" height="410" rx="3" fill="#2f6b5c"/>
+  <rect x="462" y="28" width="8" height="410" rx="3" fill="#2f6b5c"/>
+  <!-- rungs: L5 top to L0 bottom -->
+  <g font-size="17" fill="#17241f">
+    <rect x="148" y="42" width="314" height="44" rx="4" fill="#dcebe5"/>
+    <line x1="148" y1="42" x2="462" y2="42" stroke="#b3261e" stroke-width="2"/>
+    <text x="164" y="70"><tspan font-weight="700">L5</tspan>  Indistinguishable</text>
+    <rect x="148" y="110" width="314" height="44" rx="4" fill="#e3efea"/>
+    <text x="164" y="138"><tspan font-weight="700">L4</tspan>  Mimicked</text>
+    <rect x="148" y="178" width="314" height="44" rx="4" fill="#e9f2ee"/>
+    <text x="164" y="206"><tspan font-weight="700">L3</tspan>  Approached</text>
+    <rect x="148" y="246" width="314" height="44" rx="4" fill="#eef5f2"/>
+    <text x="164" y="274"><tspan font-weight="700">L2</tspan>  Breached</text>
+    <rect x="148" y="314" width="314" height="44" rx="4" fill="#f2f7f5"/>
+    <text x="164" y="342"><tspan font-weight="700">L1</tspan>  Staged</text>
+    <rect x="148" y="382" width="314" height="44" rx="4" fill="#ffffff" stroke="#c9dcd4"/>
+    <text x="164" y="410"><tspan font-weight="700">L0</tspan>  Told</text>
+  </g>
+  <g font-size="13.5" fill="#3d4f49">
+    <text x="486" y="69">anaesthesia, recovery, scar</text>
+    <text x="486" y="137">sounds, smells, pressure, time</text>
+    <text x="486" y="205">instruments reach the target</text>
+    <text x="486" y="273">local, puncture or incision</text>
+    <text x="486" y="341">room, gown, drapes, waiting</text>
+    <text x="486" y="409">the patient is told</text>
+  </g>
+  <text x="305" y="464" font-size="13" fill="#3d4f49" text-anchor="middle" font-style="italic">measured from the patient's side of the drape</text>
+</svg>
+<figcaption><b>The Sham Fidelity Ladder.</b> Introduced in Round 4, used in every Round after it. Every rung up buys blinding with risk. Round 7 is about who is allowed to make that purchase.</figcaption></figure>
+<div class="two"><div><h2>What you will make</h2><p>By Week 12 you will have written a complete sham-controlled protocol for a procedure that is performed today without one. You build it one section per Round. Nobody is operated on. The protocol is the operation.</p></div>
+<div><h2>Who this is for</h2><p>Surgical trainees, trial methodologists, perioperative and research nurses, biostatisticians, ethicists, and anyone who has said "well, it obviously works" about a procedure and would like to find out whether that is true.</p></div></div>
+<h2>Five trials you will know by heart</h2><ul class="trials"><li>Moseley et al., 2002 — arthroscopic surgery for knee osteoarthritis</li><li>Buchbinder et al. and Kallmes et al., 2009 — vertebroplasty</li><li>ORBITA, 2017 — PCI for stable angina</li><li>SYMPLICITY HTN-3, 2014 — renal denervation</li><li>Freed et al., 2001 — cell transplantation for Parkinson's disease</li></ul>
+<h2>Rounds</h2><h3 class="phase">Pre-op</h3><ol class="sched"><li><span class="wk">Wk 1</span><a href="#round">Surgical exceptionalism</a><span class="sec">§1 The procedure and its claim</span></li><li><span class="wk">Wk 2</span><a href="#round">Decomposing the surgical effect</a><span class="sec">§2 The threats list</span></li><li><span class="wk">Wk 3</span><a href="#round">Five trials, one structure</a><span class="sec">§3 Precedent</span></li><li><span class="wk">Wk 4</span><a href="#round">The Sham Fidelity Ladder</a><span class="sec">§4 Fidelity level</span></li></ol><h3 class="phase">Theatre</h3><ol class="sched"><li><span class="wk">Wk 5</span><a href="#round">Four channels of blinding</a><span class="sec">§5 Blinding plan</span></li><li><span class="wk">Wk 6</span><a href="#round">Outcomes that believe you</a><span class="sec">§6 Primary outcome and sample size</span></li><li class="brk">Mid-semester break · 7–18 September</li><li><span class="wk">Wk 7</span><a href="#round">Equipoise and acceptable risk</a><span class="sec">§7 Risk justification</span></li><li><span class="wk">Wk 8</span><a href="#round">The consent form</a><span class="sec">§8 Consent form</span></li><li><span class="wk">Wk 9</span><a href="#round">If the sham wins</a><span class="sec">§9 Stopping rules</span></li></ol><h3 class="phase">Debrief</h3><ol class="sched"><li><span class="wk">Wk 10</span><a href="#round">After the trial</a><span class="sec">§10 What would change practice</span></li><li><span class="wk">Wk 11</span><a href="#round">Where you cannot blind</a><span class="sec">§11 Limits statement</span></li><li><span class="wk">Wk 12</span><a href="#round">Protocol defence</a><span class="sec">§12 Defence notes</span></li></ol>
+<p class="foot">No patients will be operated on in this course, sham or otherwise.</p>
+</main></div>
+
+<div class="label" id="round">2 · A Round page — desktop</div>
+<div class="frame"><div class="slop"><span>Slop University</span><small>Slop header · nav · unchanged</small></div><main>
+<div class="kicker">Round 5 · Theatre</div><h1>Four channels of blinding</h1><hr class="rule">
+<div class="meta"><span class="chip">Week 5</span><span class="chip">Wed 26 August 2026</span><span class="chip">Workshop</span><span class="chip">Builds on <a href="#">Round 4</a></span><span class="chip ladder">Uses the Ladder</span></div>
+<p class="lede">Blinding is not one switch. It is four, and the surgeon is always holding one of them.</p>
+<h2>The claim</h2><p>A trial can blind the patient, the operator, the outcome assessor and the analyst. In surgical trials the operator can almost never be blinded, so the real design problem is stopping the operator's knowledge leaking into the other three channels. A rung on the Ladder protects only the patient's channel. The rest is logistics.</p>
+<h2>Before the Round</h2><p>Read Schulz and Grimes (2002) on blinding. Read the ORBITA methods on sedation and auditory isolation…</p>
+<h2>In the room</h2><p>Leak audit. Follow one fictional patient from consent to twelve-month follow-up…</p>
+<div class="log"><b>Protocol log — §5 Blinding plan.</b> Who is blind, who cannot be, and how you stop the second group telling the first.</div>
+<p class="foot">Lecture: <a href="#">Who knows what: four channels of blinding</a> · Next: <a href="#">Round 6</a> · Feeds: <a href="#">A2 The Protocol</a></p>
+</main></div>
+
+<div class="label">3 · Home page — mobile (390px wide, no horizontal scroll)</div>
+<div class="mobile"><div class="slop"><span>Slop University</span><small>☰</small></div><main>
+<div class="kicker">SLOP8982 · Postgraduate</div><h1 style="font-size:30px">Designing the Sham</h1><hr class="rule">
+<p class="lede" style="font-size:17px">Every other treatment has to beat a placebo. Surgery mostly doesn't…</p>
+<figure><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif">
+  <title id="t">The Sham Fidelity Ladder</title>
+  <desc id="d">Six rungs from L0 Told at the bottom to L5 Indistinguishable at the top. Blinding and risk both increase as the ladder climbs.</desc>
+  <rect width="720" height="480" rx="12" fill="#f6f8f7"/>
+  <!-- axes: blinding and risk both rise -->
+  <defs>
+    <marker id="ag" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#2f6b5c"/></marker>
+    <marker id="ar" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#b3261e"/></marker>
+  </defs>
+  <line x1="52" y1="420" x2="52" y2="48" stroke="#2f6b5c" stroke-width="2" marker-end="url(#ag)"/>
+  <text x="40" y="240" fill="#2f6b5c" font-size="14" font-weight="600" text-anchor="middle" transform="rotate(-90 40 240)">blinding</text>
+  <line x1="100" y1="420" x2="100" y2="48" stroke="#b3261e" stroke-width="2" marker-end="url(#ar)"/>
+  <text x="88" y="240" fill="#b3261e" font-size="14" font-weight="600" text-anchor="middle" transform="rotate(-90 88 240)">risk</text>
+  <!-- rails -->
+  <rect x="140" y="28" width="8" height="410" rx="3" fill="#2f6b5c"/>
+  <rect x="462" y="28" width="8" height="410" rx="3" fill="#2f6b5c"/>
+  <!-- rungs: L5 top to L0 bottom -->
+  <g font-size="17" fill="#17241f">
+    <rect x="148" y="42" width="314" height="44" rx="4" fill="#dcebe5"/>
+    <line x1="148" y1="42" x2="462" y2="42" stroke="#b3261e" stroke-width="2"/>
+    <text x="164" y="70"><tspan font-weight="700">L5</tspan>  Indistinguishable</text>
+    <rect x="148" y="110" width="314" height="44" rx="4" fill="#e3efea"/>
+    <text x="164" y="138"><tspan font-weight="700">L4</tspan>  Mimicked</text>
+    <rect x="148" y="178" width="314" height="44" rx="4" fill="#e9f2ee"/>
+    <text x="164" y="206"><tspan font-weight="700">L3</tspan>  Approached</text>
+    <rect x="148" y="246" width="314" height="44" rx="4" fill="#eef5f2"/>
+    <text x="164" y="274"><tspan font-weight="700">L2</tspan>  Breached</text>
+    <rect x="148" y="314" width="314" height="44" rx="4" fill="#f2f7f5"/>
+    <text x="164" y="342"><tspan font-weight="700">L1</tspan>  Staged</text>
+    <rect x="148" y="382" width="314" height="44" rx="4" fill="#ffffff" stroke="#c9dcd4"/>
+    <text x="164" y="410"><tspan font-weight="700">L0</tspan>  Told</text>
+  </g>
+  <g font-size="13.5" fill="#3d4f49">
+    <text x="486" y="69">anaesthesia, recovery, scar</text>
+    <text x="486" y="137">sounds, smells, pressure, time</text>
+    <text x="486" y="205">instruments reach the target</text>
+    <text x="486" y="273">local, puncture or incision</text>
+    <text x="486" y="341">room, gown, drapes, waiting</text>
+    <text x="486" y="409">the patient is told</text>
+  </g>
+  <text x="305" y="464" font-size="13" fill="#3d4f49" text-anchor="middle" font-style="italic">measured from the patient's side of the drape</text>
+</svg>
+<figcaption>The Ladder scales to width; text stays legible.</figcaption></figure>
+<h3 class="phase">Pre-op</h3><ol class="sched"><li><span class="wk">Wk 1</span><a href="#">Surgical exceptionalism</a><span class="sec">§1 The procedure and its claim</span></li><li><span class="wk">Wk 2</span><a href="#">Decomposing the surgical effect</a><span class="sec">§2 The threats list</span></li></ol>
+</main></div>
+</body></html>

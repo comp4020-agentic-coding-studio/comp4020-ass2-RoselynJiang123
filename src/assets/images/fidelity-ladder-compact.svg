@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490 480" role="img" aria-labelledby="t d" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif">
+  <title id="t">The Sham Fidelity Ladder</title>
+  <desc id="d">Six rungs from L0 Told at the bottom to L5 Indistinguishable at the top. Blinding and risk both increase as the ladder climbs.</desc>
+  <rect width="490" height="480" rx="12" fill="#f6f8f7"/>
+  <!-- axes: blinding and risk both rise -->
+  <defs>
+    <marker id="ag" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#2f6b5c"/></marker>
+    <marker id="ar" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#b3261e"/></marker>
+  </defs>
+  <line x1="52" y1="420" x2="52" y2="48" stroke="#2f6b5c" stroke-width="2" marker-end="url(#ag)"/>
+  <text x="40" y="240" fill="#2f6b5c" font-size="14" font-weight="600" text-anchor="middle" transform="rotate(-90 40 240)">blinding</text>
+  <line x1="100" y1="420" x2="100" y2="48" stroke="#b3261e" stroke-width="2" marker-end="url(#ar)"/>
+  <text x="88" y="240" fill="#b3261e" font-size="14" font-weight="600" text-anchor="middle" transform="rotate(-90 88 240)">risk</text>
+  <!-- rails -->
+  <rect x="140" y="28" width="8" height="410" rx="3" fill="#2f6b5c"/>
+  <rect x="462" y="28" width="8" height="410" rx="3" fill="#2f6b5c"/>
+  <!-- rungs: L5 top to L0 bottom -->
+  <g font-size="20" fill="#17241f">
+    <rect x="148" y="42" width="314" height="44" rx="4" fill="#dcebe5"/>
+    <line x1="148" y1="42" x2="462" y2="42" stroke="#b3261e" stroke-width="2"/>
+    <text x="164" y="70"><tspan font-weight="700">L5</tspan>  Indistinguishable</text>
+    <rect x="148" y="110" width="314" height="44" rx="4" fill="#e3efea"/>
+    <text x="164" y="138"><tspan font-weight="700">L4</tspan>  Mimicked</text>
+    <rect x="148" y="178" width="314" height="44" rx="4" fill="#e9f2ee"/>
+    <text x="164" y="206"><tspan font-weight="700">L3</tspan>  Approached</text>
+    <rect x="148" y="246" width="314" height="44" rx="4" fill="#eef5f2"/>
+    <text x="164" y="274"><tspan font-weight="700">L2</tspan>  Breached</text>
+    <rect x="148" y="314" width="314" height="44" rx="4" fill="#f2f7f5"/>
+    <text x="164" y="342"><tspan font-weight="700">L1</tspan>  Staged</text>
+    <rect x="148" y="382" width="314" height="44" rx="4" fill="#ffffff" stroke="#c9dcd4"/>
+    <text x="164" y="410"><tspan font-weight="700">L0</tspan>  Told</text>
+  </g>
+    <text x="305" y="464" font-size="15" fill="#3d4f49" text-anchor="middle" font-style="italic">measured from the patient's side of the drape</text>
+</svg>
