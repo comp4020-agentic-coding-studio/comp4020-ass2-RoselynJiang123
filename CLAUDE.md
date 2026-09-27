@@ -73,17 +73,22 @@ code to copy). Colours in the mockup are indicative.
   with `<picture>` so screens under 640px get the compact one; its alt text is
   the six rung names in order. Social card: `src/assets/images/social-card.png`
   (1200x630), alt "SLOP8814 Designing the Sham, with the Sham Fidelity Ladder".
-- Image-free by design: the only figure is the Ladder SVG. No stock photos, no
-  clinical images, no emoji, no icons for decoration.
-- Home: hero (kicker, title, lede) → thesis pull-quote → Ladder figure with
-  caption → "What you will make" / "Who this is for" → five trials → schedule
-  grouped by phase → footnote.
+- Two images only: the Ladder SVG and the home hero
+  (`src/assets/images/hero-drape.svg`). Still no stock photos, no clinical
+  images, no emoji, no icons for decoration.
+- Home: hero image → kicker, title, lede → thesis pull-quote → Ladder figure
+  with caption → "What you will make" / "Who this is for" → five trials →
+  schedule grouped by phase → footnote.
 - Round pages: a meta strip (Week · date · phase · format · prereqs ·
-  "Uses the Ladder") then the four fixed headings.
+  "Uses the Ladder") then these headings in this order: The claim · Before the
+  Round · In the room · Key terms · Protocol log · Check yourself
+  (content-specific sections such as "The Ladder" or "Stopping rules" may sit
+  between them).
 - Must work at both marking viewports (see the course assessment page's marking
   environment; write the two sizes here once you have read them:
   `DESKTOP = 1920×1080`, `MOBILE = 390×844`). No horizontal scroll at mobile
-  width. Tables collapse or scroll inside their own container.
+  width, ever, on the page itself. Every Markdown table scrolls horizontally
+  inside its own container at 390px rather than widening the page.
 
 ## How to work
 
@@ -102,5 +107,5 @@ code to copy). Colours in the mockup are indicative.
 
 No new collections unless essential. No search, no comments, no dark-mode
 toggle, no animations beyond CSS transitions, no client-side frameworks, no
-analytics, no extra decks, no images other than the Ladder. Do not write
-PROCESS.md — the student writes it.
+analytics, no extra decks, no images other than the Ladder and the home hero.
+Do not write PROCESS.md — the student writes it.
