@@ -18,13 +18,23 @@ related:
   - sessions/week-10-after-the-trial
 ---
 
-This lecture has no slides. It has a whiteboard.
+## Summary
+
+A negative sham-controlled trial ends a question for methodologists. It does not always end the procedure. This lecture follows two procedures after their trials — vertebroplasty after 2009 and knee arthroscopy after 2002 — and asks why practice moved more slowly than the evidence, and what a protocol can decide in advance about its own result.
 
 ## Outline
 
-- Vertebroplasty after 2009
-- Knee arthroscopy after 2002
-- Why practice resists
-- What a protocol can decide in advance about its own result
+1. **Vertebroplasty after 2009.** Two negative trials, a turn in guidance, a positive trial in acute fractures (VAPOUR, 2016), and another negative one (VERTOS IV, 2018). How both sides read the same literature.
+2. **Knee arthroscopy after 2002.** From Moseley, through FIDELITY (2013), to a strong recommendation against arthroscopy for degenerative knee disease in 2017.
+3. **Why practice resists.** Payment, training, patient demand, and the argument that the trial studied the wrong patients or the wrong technique.
+4. **What a protocol can decide in advance.** Inviting critics into the design, specifying the technique with its advocates, and writing down what each result will be taken to mean.
 
-Belongs to [Week 10 — After the trial](/sessions/week-10-after-the-trial/).
+## Read alongside
+
+Buchbinder et al. (2009) · Kallmes et al. (2009) · VAPOUR (2016) · VERTOS IV (2018) · FIDELITY (2013) · Siemieniuk et al. (2017)
+
+## The question to leave with
+
+If your trial is negative, who will be the last person to stop doing the procedure, and what would it take to persuade them?
+
+This lecture has no slides. It has a whiteboard.

@@ -19,14 +19,24 @@ related:
   - sessions/week-04-the-fidelity-ladder
 ---
 
-[Slides](/decks/week-04-fidelity-ladder/)
+## Summary
+
+How much of an operation do you have to perform in order not to perform it? This lecture introduces the Sham Fidelity Ladder, the instrument the rest of the course is built on. The Ladder orders a sham by what the patient could detect, in six rungs from L0 (told) to L5 (indistinguishable). It is a teaching instrument invented for this course, not a published standard.
+
+**[Slides](/decks/week-04-fidelity-ladder/)**
 
 ## Outline
 
-- The question: how much of an operation must you perform in order not to perform it?
-- The six rungs
-- Measured from the patient's side of the drape
-- Placing two trials live
-- Every rung up buys blinding with risk
+1. **The question.** Every sham is a list of things the patient must not be able to tell.
+2. **The six rungs.** Told, Staged, Breached, Approached, Mimicked, Indistinguishable. Each rung contains every rung below it.
+3. **Measured from the patient's side of the drape.** What the surgeon does matters only if the patient can see, hear, smell, feel or later find it.
+4. **Placing two trials live.** Buchbinder 2009 (provisionally L4) and ORBITA (provisionally L5). These ratings are the course's teaching positions, and you are expected to argue with them.
+5. **Every rung up buys blinding with risk.** A preview of Week 7, where the committee reads the Ladder upside down.
 
-Belongs to [Week 4 — The Sham Fidelity Ladder](/sessions/week-04-the-fidelity-ladder/).
+## Read alongside
+
+Your Week 3 trial table. Nothing else: the Ladder is the reading.
+
+## The question to leave with
+
+What is the lowest rung at which your own procedure could still be tested honestly?
