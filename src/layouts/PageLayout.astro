@@ -16,4 +16,12 @@ import { siteConfig } from "../site-config";
     --sham-drape-tint: color-mix(in srgb, var(--sham-drape) 10%, transparent);
     --sham-incision: #b3261e;
   }
+
+  /* Markdown tables (marking-criteria grids, session schedules) can be wider
+     than a narrow viewport. Scroll the table itself instead of the page. */
+  table {
+    display: block;
+    overflow-x: auto;
+    max-width: 100%;
+  }
 </style>
