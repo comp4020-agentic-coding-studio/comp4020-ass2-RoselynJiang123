@@ -9,6 +9,9 @@ import { courseMeta } from "../course-config";
   <div class="kicker">
     {courseMeta.code} · Postgraduate · {courseMeta.session}, {courseMeta.year}
   </div>
+  <ul class="tags">
+    {courseMeta.tags.map((tag) => <li>{tag}</li>)}
+  </ul>
   <h1>{courseMeta.title}</h1>
   <hr class="rule" />
   <p class="lede">
@@ -83,6 +86,23 @@ import { courseMeta } from "../course-config";
     letter-spacing: 0.08em;
     text-transform: uppercase;
     font-size: 0.85rem;
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    list-style: none;
+    padding: 0;
+    margin: 0.6rem 0 0;
+  }
+
+  .tags li {
+    font-size: 0.8rem;
+    color: var(--sham-drape);
+    background: var(--sham-drape-tint);
+    border-radius: 999px;
+    padding: 0.15rem 0.65rem;
   }
 
   h1 {
