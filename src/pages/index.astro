@@ -3,9 +3,16 @@ import Ladder from "../components/Ladder.astro";
 import Schedule from "../components/Schedule.astro";
 import PageLayout from "../layouts/PageLayout.astro";
 import { courseMeta } from "../course-config";
+import { withBase } from "astro-theme-university/url";
+import heroDrape from "../assets/images/hero-drape.svg";
 ---
 
 <PageLayout title={`${courseMeta.code}: ${courseMeta.title}`} description={courseMeta.description} lead={false}>
+  <img
+    class="hero"
+    src={heroDrape.src}
+    alt="A green surgical drape, seen from above. Its window frames a patch of skin marked with a dashed red incision line that has not been cut."
+  />
   <div class="kicker">
     {courseMeta.code} · Postgraduate · {courseMeta.session}, {courseMeta.year}
   </div>
@@ -74,12 +81,134 @@ import { courseMeta } from "../course-config";
     </li>
   </ul>
 
+  <h2>What you will be able to do</h2>
+  <p>By the end of the course you will be able to:</p>
+  <ol>
+    <li>
+      Explain why an improvement after surgery is not, by itself, evidence
+      that the surgery worked.
+    </li>
+    <li>
+      Take apart a published sham-controlled trial and rate its sham on the
+      Sham Fidelity Ladder, with evidence.
+    </li>
+    <li>
+      Design a sham procedure, and a blinding plan around it, for a
+      procedure that has never been tested against one.
+    </li>
+    <li>
+      Justify the risk of a sham to an ethics committee, and write a
+      consent form a patient can understand without it unblinding them.
+    </li>
+    <li>
+      Decide in advance what your trial's results will mean, and review
+      someone else's protocol as a committee member would.
+    </li>
+  </ol>
+
+  <h2>How the course runs</h2>
+  <p>
+    Each week has one <strong>Round</strong>, on Wednesday. Six weeks also
+    have a <strong>lecture</strong>, on Monday, which the Round then puts to
+    work. There are no tutorials separate from the Rounds.
+  </p>
+  <p>
+    Every Round adds one section to your protocol. By Week 11 the protocol
+    exists, because you have been writing it all semester. Week 12 is its
+    defence.
+  </p>
+  <table>
+    <thead>
+      <tr>
+        <th>Phase</th>
+        <th>Weeks</th>
+        <th>What happens</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Pre-op</strong></td>
+        <td>1–4</td>
+        <td>
+          Why surgery was rarely tested against placebo, and what a sham is
+          made of. Ends with the Ladder.
+        </td>
+      </tr>
+      <tr>
+        <td><strong>Theatre</strong></td>
+        <td>5–9</td>
+        <td>Building the trial: blinding, outcomes, ethics, consent, stopping rules.</td>
+      </tr>
+      <tr>
+        <td><strong>Debrief</strong></td>
+        <td>10–12</td>
+        <td>What happens after a trial, where shams cannot reach, and the defence.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Assessment at a glance</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Code</th>
+        <th>Task</th>
+        <th>Weight</th>
+        <th>Due</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>A1</td>
+        <td><a href={withBase("/assessments/a1-sham-autopsy/")}>Sham Autopsy</a> — rate a published trial on the Ladder</td>
+        <td>35%</td>
+        <td>Fri 2 Oct (Week 8)</td>
+      </tr>
+      <tr>
+        <td>A2</td>
+        <td><a href={withBase("/assessments/a2-the-protocol/")}>The Protocol</a> — your own sham-controlled trial</td>
+        <td>50%</td>
+        <td>Fri 23 Oct (Week 11)</td>
+      </tr>
+      <tr>
+        <td>A3</td>
+        <td><a href={withBase("/assessments/a3-ethics-committee-response/")}>Ethics Committee Response</a> — review a classmate's protocol</td>
+        <td>15%</td>
+        <td>Fri 30 Oct (Week 12)</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Before you enrol</h2>
+  <p>
+    <strong>Assumed knowledge.</strong> A first course in research methods or
+    clinical epidemiology, or equivalent professional experience. You do not
+    need to have performed surgery. Most of the teaching team has not.
+  </p>
+  <p>
+    <strong>Workload.</strong> About ten hours a week: two hours of lecture
+    and Round, three to four of reading, and the rest on your protocol.
+  </p>
+  <p>
+    <strong>Where to start.</strong> Read <a href={withBase("/sessions/week-01-surgical-exceptionalism/")}>Week 1</a>, then the course <a href={withBase("/policies/")}>policies</a>.
+  </p>
+
   <Schedule />
 
   <p class="foot">No patients will be operated on in this course, sham or otherwise.</p>
 </PageLayout>
 
 <style>
+  .hero {
+    display: block;
+    width: 100%;
+    height: clamp(160px, 26vw, 360px);
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+    margin-block-end: 1.5rem;
+  }
+
   .kicker {
     color: var(--sham-drape);
     font-weight: 700;
