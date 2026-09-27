@@ -42,8 +42,7 @@ export const slopCourseMetaSchema = z
 // navigation label and /api/index.json all read this object.
 //
 // The code's last three digits (814) were assigned to this repo when it was
-// provisioned; COURSE-SPEC.md's own course code (SLOP8982) is kept only where
-// its last three digits match the repo's, so this record uses SLOP8814.
+// provisioned; COURSE-SPEC.md uses the same code.
 export const courseMeta = slopCourseMetaSchema.parse({
   code: "SLOP8814",
   title: "Designing the Sham: Placebo Controls for Invasive Procedures",

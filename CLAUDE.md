@@ -1,4 +1,4 @@
-# Harness — SLOP8982 Designing the Sham
+# Harness — SLOP8814 Designing the Sham
 
 The platform is fixed and documented in `README.md`. The course is defined in
 `COURSE-SPEC.md`, which is the single source of truth for every word, date, key
@@ -72,7 +72,7 @@ code to copy). Colours in the mockup are indicative.
   descriptors) and `fidelity-ladder-compact.svg` (no descriptors). Serve them
   with `<picture>` so screens under 640px get the compact one; its alt text is
   the six rung names in order. Social card: `src/assets/images/social-card.png`
-  (1200x630), alt "SLOP8982 Designing the Sham, with the Sham Fidelity Ladder".
+  (1200x630), alt "SLOP8814 Designing the Sham, with the Sham Fidelity Ladder".
 - Image-free by design: the only figure is the Ladder SVG. No stock photos, no
   clinical images, no emoji, no icons for decoration.
 - Home: hero (kicker, title, lede) → thesis pull-quote → Ladder figure with

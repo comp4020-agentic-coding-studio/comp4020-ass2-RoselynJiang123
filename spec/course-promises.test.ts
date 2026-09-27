@@ -1,4 +1,4 @@
-// Course promises for SLOP8982 Designing the Sham.
+// Course promises for SLOP8814 Designing the Sham.
 // Each test protects something the course says about itself that the build
 // cannot check. Source of truth: COURSE-SPEC.md. Change a test only when
 // COURSE-SPEC changes, and say so in the commit.

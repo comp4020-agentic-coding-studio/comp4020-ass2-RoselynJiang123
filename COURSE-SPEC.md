@@ -1,4 +1,4 @@
-# COURSE-SPEC — SLOP8982 Designing the Sham
+# COURSE-SPEC — SLOP8814 Designing the Sham
 
 This file is the single source of truth for the course. Every page on the site is
 built from it. If the site and this file disagree, the site is wrong. If this file
@@ -13,7 +13,7 @@ light formatting only. Do not paraphrase it, pad it, or "improve" its voice.
 
 | Field | Value |
 |---|---|
-| Code | `SLOP8982` (keep the three digits the repo arrived with; if they are not `982`, keep the repo's and change every mention here) |
+| Code | `SLOP8814` (keep the three digits the repo arrived with; if they are not `982`, keep the repo's and change every mention here) |
 | Level | 8 (postgraduate) |
 | Title | Designing the Sham: Placebo Controls for Invasive Procedures |
 | Description (80–300 chars) | Invasive procedures are rarely tested against placebo. This course treats the sham operation as a design object: how it is built, blinded, consented, reviewed, and defended. |
@@ -31,7 +31,7 @@ shape and make the start/end dates above true.
 
 ## 1. The idea (use on the home page, verbatim)
 
-**Kicker:** SLOP8982 · Postgraduate · Semester 2, 2026
+**Kicker:** SLOP8814 · Postgraduate · Semester 2, 2026
 
 **Lede:**
 Every other treatment has to beat a placebo. Surgery mostly doesn't. This course
@@ -529,7 +529,7 @@ Weeks 5–9).
 
 Astromotion markdown, `---` between slides. Keep text large; one idea per slide.
 
-1. **The Sham Fidelity Ladder** — SLOP8982 · Round 4 · Lecture
+1. **The Sham Fidelity Ladder** — SLOP8814 · Round 4 · Lecture
 2. "Every sham is a list of things the patient must not be able to tell."
 3. The question: how much of an operation do you have to perform in order not to perform it?
 4. **L0 Told** — The patient is told. Nothing else happens. The floor.
