@@ -3,9 +3,9 @@ title: Second lecture
 description:
   Week 2 — the first substantive material, and the run-up to the first review
 week: 2
-date: 2027-03-01
+date: 2026-08-03
 teachers:
-  - idris-fenn
+  - felix-ansell-obi
 related:
   - sessions/02-first-review
   - assessments/assignment-1

@@ -4,9 +4,9 @@ description:
   The second session, where work made in week 1 meets an audience for the first
   time
 week: 2
-date: 2027-03-01
+date: 2026-08-03
 teachers:
-  - idris-fenn
+  - felix-ansell-obi
 spec:
   - work from week 1 is running and can be shown in under two minutes
   - you can name the one decision you are least sure about

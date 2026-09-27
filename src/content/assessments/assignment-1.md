@@ -4,7 +4,7 @@ description:
   The first piece of graded work — a placeholder brief showing the shape every
   assessment page follows
 week: 6
-due: 2027-04-12T12:00:00+10:00
+due: 2026-09-04T12:00:00+10:00
 weight: 40
 marking:
   mode: weighted
