@@ -1,68 +1,167 @@
 ---
-import Card from "astro-theme-university/components/Card.astro";
-import CardGrid from "astro-theme-university/components/CardGrid.astro";
-import ContentLayout from "astro-theme-university/layouts/ContentLayout.astro";
-import heroImage from "../assets/images/hero-home.avif";
+import Ladder from "../components/Ladder.astro";
+import Schedule from "../components/Schedule.astro";
+import PageLayout from "../layouts/PageLayout.astro";
 import { courseMeta } from "../course-config";
-import { sessionLabels, siteConfig } from "../site-config";
-
-// STARTER_CONTENT: replace the hero artwork and its alt text below, then
-// remove this comment.
 ---
 
-<ContentLayout
-  title={`${courseMeta.code}: ${courseMeta.title}`}
-  description={courseMeta.description}
-  heroImage={heroImage}
-  heroImageAlt="A lecture theatre reduced to flat gold and black shapes, rows of seats sweeping past the frame, in a two-ink risograph print"
-  {...siteConfig}
->
-  <ul class="course-tags" aria-label="Course tags">
-    {courseMeta.tags.map((tag) => <li>{tag}</li>)}
+<PageLayout title={`${courseMeta.code}: ${courseMeta.title}`} description={courseMeta.description} lead={false}>
+  <div class="kicker">
+    {courseMeta.code} · Postgraduate · {courseMeta.session}, {courseMeta.year}
+  </div>
+  <h1>{courseMeta.title}</h1>
+  <hr class="rule" />
+  <p class="lede">
+    Every other treatment has to beat a placebo. Surgery mostly doesn't. This
+    course spends twelve weeks on the operation that makes the comparison
+    possible: the one where nothing is done, carefully.
+  </p>
+
+  <blockquote>
+    A sham procedure is not the absence of an operation. It is an operation —
+    designed, rehearsed, consented and reviewed — whose only job is to leave
+    the real one nothing to hide behind.
+  </blockquote>
+
+  <figure>
+    <Ladder />
+    <figcaption>
+      <strong>The Sham Fidelity Ladder.</strong> Introduced in Round 4, used in
+      every Round after it. Every rung up buys blinding with risk. Round 7 is
+      about who is allowed to make that purchase.
+    </figcaption>
+  </figure>
+
+  <div class="two">
+    <div>
+      <h2>What you will make</h2>
+      <p>
+        By Week 12 you will have written a complete sham-controlled protocol
+        for a procedure that is performed today without one. You build it one
+        section per Round. Nobody is operated on. The protocol is the
+        operation.
+      </p>
+    </div>
+    <div>
+      <h2>Who this is for</h2>
+      <p>
+        Surgical trainees, trial methodologists, perioperative and research
+        nurses, biostatisticians, ethicists, and anyone who has said "well, it
+        obviously works" about a procedure and would like to find out whether
+        that is true.
+      </p>
+    </div>
+  </div>
+
+  <h2>Five trials you will know by heart</h2>
+  <ul class="trials">
+    <li>Moseley et al., 2002 — arthroscopic surgery for knee osteoarthritis</li>
+    <li>
+      Buchbinder et al. and Kallmes et al., 2009 — vertebroplasty for
+      osteoporotic fractures
+    </li>
+    <li>ORBITA (Al-Lamee et al.), 2017 — PCI for stable angina</li>
+    <li>
+      SYMPLICITY HTN-3 (Bhatt et al.), 2014 — renal denervation for resistant
+      hypertension
+    </li>
+    <li>
+      Freed et al., 2001 — embryonic dopamine-neuron transplantation for
+      Parkinson's disease
+    </li>
   </ul>
 
-  <!-- STARTER_CONTENT: replace the authored page below, then remove this comment. -->
-  <h2>What you will do</h2>
-  <p>
-    Say what a student spends their time on — the making, reading, arguing or
-    measuring that fills the weeks. Name the artefact they walk out with.
-  </p>
+  <Schedule />
 
-  <h2>Who it is for</h2>
-  <p>
-    Say who this is aimed at and what they need to already know. Be specific
-    enough that someone can rule themselves in or out without emailing you.
-  </p>
-
-  <h2>Where to go next</h2>
-  <CardGrid columns={2}>
-    <Card title={sessionLabels.plural} href="/sessions/">
-      <p>The weekly schedule and what happens in each teaching session.</p>
-    </Card>
-    <Card title="Assessment" href="/assessments/">
-      <p>What is marked, what it is worth, and when it is due.</p>
-    </Card>
-    <Card title="People" href="/people/">
-      <p>Who teaches the course and how to reach them.</p>
-    </Card>
-  </CardGrid>
-</ContentLayout>
+  <p class="foot">No patients will be operated on in this course, sham or otherwise.</p>
+</PageLayout>
 
 <style>
-  .course-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-block: 0 2rem;
-    padding: 0;
-    list-style: none;
+  .kicker {
+    color: var(--sham-drape);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 0.85rem;
   }
 
-  .course-tags li {
-    padding: 0.25rem 0.65rem;
-    border-radius: 999px;
-    color: var(--at-text-secondary);
-    background: var(--at-bg-alt);
-    font-size: 0.9rem;
+  h1 {
+    font-size: clamp(1.9rem, 5vw, 3rem);
+    line-height: 1.08;
+    margin: 0.5rem 0 0;
+    letter-spacing: -0.015em;
+  }
+
+  .rule {
+    height: 2px;
+    background: var(--sham-incision);
+    width: 7.5rem;
+    margin: 1.1rem 0 1.25rem;
+    border: 0;
+  }
+
+  .lede {
+    font-size: 1.25rem;
+    max-width: 40rem;
+  }
+
+  blockquote {
+    margin: 2rem 0;
+    padding: 1.1rem 1.35rem;
+    border-inline-start: 4px solid var(--sham-drape);
+    background: var(--sham-drape-tint);
+    font-size: 1.2rem;
+  }
+
+  figure {
+    margin: 2rem 0;
+  }
+
+  figure picture {
+    display: block;
+  }
+
+  figure img {
+    width: 100%;
+    height: auto;
+    max-width: 45rem;
+    display: block;
+  }
+
+  figcaption {
+    font-size: 0.95rem;
+    color: var(--at-text-secondary, #4a5a55);
+    margin-block-start: 0.5rem;
+  }
+
+  .two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+    margin: 2.25rem 0 0.5rem;
+  }
+
+  .trials {
+    padding-inline-start: 1.25rem;
+  }
+
+  .trials li {
+    margin: 0.25rem 0;
+  }
+
+  .foot {
+    font-size: 0.85rem;
+    color: var(--at-text-secondary, #4a5a55);
+    margin-block-start: 2.25rem;
+  }
+
+  @media (max-width: 700px) {
+    .two {
+      grid-template-columns: 1fr;
+    }
   }
 </style>

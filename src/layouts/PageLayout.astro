@@ -6,3 +6,14 @@ import { siteConfig } from "../site-config";
 <MdxPageLayout siteConfig={siteConfig} {...Astro.props}>
   <slot />
 </MdxPageLayout>
+
+<style is:global>
+  /* Course accent tokens. Used only inside course components (kicker, rule,
+     pull-quote, Ladder rail, meta chips, Protocol log box) — never in the
+     Slop header, footer or brand palette. */
+  :root {
+    --sham-drape: #2f6b5c;
+    --sham-drape-tint: color-mix(in srgb, var(--sham-drape) 10%, transparent);
+    --sham-incision: #b3261e;
+  }
+</style>

@@ -1,0 +1,88 @@
+---
+import { getPublishedCollection } from "astro-course-university/content";
+import { withBase } from "astro-theme-university/url";
+
+const sessions = (await getPublishedCollection("sessions")).sort((a, b) => a.data.week - b.data.week);
+const phases = ["Pre-op", "Theatre", "Debrief"] as const;
+---
+
+<h2>Rounds</h2>
+{
+  phases.map((phase) => (
+    <>
+      <h3 class="phase">{phase}</h3>
+      <ol class="sched">
+        {sessions
+          .filter((session) => session.data.phase === phase)
+          .map((session) => (
+            <>
+              <li>
+                <span class="wk">Wk {session.data.week}</span>
+                <a href={withBase(`/sessions/${session.id}/`)}>{session.data.title}</a>
+                <span class="sec">{session.data.protocolSection}</span>
+              </li>
+              {session.data.week === 6 && (
+                <li class="brk">Mid-semester break · 7–18 September</li>
+              )}
+            </>
+          ))}
+      </ol>
+    </>
+  ))
+}
+
+<style>
+  .phase {
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--sham-drape);
+    border-block-end: 1px solid var(--sham-drape);
+    padding-block-end: 0.25rem;
+    margin: 1.6rem 0 0.4rem;
+  }
+
+  ol.sched {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  ol.sched li {
+    display: grid;
+    grid-template-columns: 4rem 1fr auto;
+    gap: 0.75rem;
+    padding: 0.55rem 0;
+    border-block-end: 1px solid color-mix(in srgb, currentColor 12%, transparent);
+    align-items: baseline;
+  }
+
+  ol.sched li.brk {
+    display: block;
+    color: var(--at-text-secondary, #4a5a55);
+    font-style: italic;
+    font-size: 0.85rem;
+    border-block-end: none;
+  }
+
+  .wk {
+    font-variant-numeric: tabular-nums;
+    color: var(--at-text-secondary, #4a5a55);
+    font-size: 0.85rem;
+  }
+
+  .sec {
+    font-size: 0.8rem;
+    color: var(--at-text-secondary, #4a5a55);
+  }
+
+  @media (max-width: 700px) {
+    ol.sched li:not(.brk) {
+      grid-template-columns: 3.25rem 1fr;
+    }
+
+    ol.sched li .sec {
+      grid-column: 2;
+    }
+  }
+</style>

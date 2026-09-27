@@ -1,0 +1,18 @@
+---
+import ladderWide from "../assets/images/fidelity-ladder.svg";
+import ladderCompact from "../assets/images/fidelity-ladder-compact.svg";
+
+const rungs =
+  "L0 Told · L1 Staged · L2 Breached · L3 Approached · L4 Mimicked · L5 Indistinguishable";
+---
+
+<picture>
+  <source srcset={ladderCompact.src} media="(max-width: 640px)" />
+  <img
+    src={ladderWide.src}
+    width={ladderWide.width}
+    height={ladderWide.height}
+    alt={rungs}
+    loading="lazy"
+  />
+</picture>
